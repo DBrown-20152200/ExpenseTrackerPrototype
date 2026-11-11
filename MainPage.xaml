@@ -3,4 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExpenseTrackerPrototype.MainPage">
 
+    <Grid HorizontalOptions="Center" Padding="15" RowSpacing="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="Total Spending" Grid.Column="0" Grid.Row="0" HorizontalTextAlignment="Center"/>
+
+        <Label Text="$[Spending amount here]" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Center"/>
+
+        <Label Text="This Month's Budget" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Center"/>
+
+        <Label Text="[Budget amount here]" Grid.Column="0" Grid.Row="3" HorizontalTextAlignment="Center"/>
+
+        <Image Source="expense tracking app ui.png" Grid.Column="0" Grid.Row="4" Aspect="AspectFit"/>
+
+        <Grid Grid.Row="5" Grid.Column="0" ColumnSpacing="10">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
 </ContentPage>

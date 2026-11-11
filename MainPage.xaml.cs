@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void manage_button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
